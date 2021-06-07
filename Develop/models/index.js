@@ -14,6 +14,7 @@ const ProductTag = require("./ProductTag");
 
 Product.belongsTo(Category, {
   foreignKey: "category_id",
+  onDelete: "SET NULL",
 });
 
 Category.hasMany(Product, {
