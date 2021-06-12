@@ -21,10 +21,13 @@ This development was completed in part using the following references:
 
 ## Installation
 
-### Pre requisites
+### Technology Requirements
 
-- Code editing software such as Visual Code Studio.
-- Node.js
+- node.js
+- npm MySQL2
+- npm Sequelise
+- npm Express
+- npm dotenv
 
 ### Getting Started
 
@@ -56,15 +59,8 @@ To update the project with latest code:
 4. Commit files using command git commit -m "My commit message"
 5. Push files to gitlab main branch using command git push
 
-### Technologies Used
-
-- npm MySQL2
-- npm Sequelise
-- npm Express
-- npm dotenv
-
 ### Versioning
 
 ### License
 
-MIT
+MIT License
