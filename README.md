@@ -5,7 +5,7 @@ Monash Bootcamp Homework 13 - e-Commerce Website Backend
 ### About this project
 
 This project builds the back end for an e-commerce site from enhancement of starter code.
-THe application uses Express.js API and Sequelize to interact with a MySQL database.
+The application uses Express.js API and Sequelize to interact with a MySQL database.
 
 As this application won’t be deployed, walkthrough videos have been included to demonstrates functionality and all of the acceptance criteria being met.
 
