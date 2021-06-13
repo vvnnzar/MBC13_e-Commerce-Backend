@@ -9,9 +9,14 @@ THe application uses Express.js API and Sequelize to interact with a MySQL datab
 
 As this application won’t be deployed, walkthrough videos have been included to demonstrates functionality and all of the acceptance criteria being met.
 
-### Project Link
-
 ### System Walkthrough Links
+
+eCommerce Database Seed https://drive.google.com/file/d/1U3EvkI8PYFFm7i0IznA7QE2iYdJe4ddQ/view 
+
+eCommerce Database Requests https://drive.google.com/file/d/1mh72slq8CQ89vv6GxCQ9PMGEn4HVX1wj/view
+
+   
+
 
 ### Acknowledgements
 
