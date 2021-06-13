@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const { request } = require("express");
+// const { request } = require("express");
 const { Category, Product } = require("../../models");
 
 router.get("/", async (req, res) => {
@@ -7,12 +7,7 @@ router.get("/", async (req, res) => {
   // be sure to include its associated Products
   try {
     const categoryData = await Category.findAll({
-      include: [
-        {
-          model: Product,
-          attributes: ["id", "product_name", "price", "stock", "category_id"],
-        },
-      ],
+      include: [{ model: Product }],
     });
 
     res.status(200).json(categoryData);
@@ -26,12 +21,7 @@ router.get("/", async (req, res) => {
 router.get("/:id", async (req, res) => {
   try {
     const categoryData = await Category.findByPk(req.params.id, {
-      include: [
-        {
-          model: Product,
-          attributes: ["id", "product_name", "price", "stock", "category_id"],
-        },
-      ],
+      include: [{ model: Product }],
     });
 
     if (!categoryData) {
@@ -63,6 +53,7 @@ router.put("/:id", async (req, res) => {
     const categoryData = await Category.update({
       where: {
         id: req.params.id,
+        category_name: req.body.category_name,
       },
     });
 
